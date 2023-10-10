@@ -112,25 +112,31 @@
 
         <div class="Contact-form">
           <form action="https://formsubmit.co/6c987e35009b8ad5b92d54988b5fde02" method="post">
+            <!-- Honeypot -->
+            <input class="Honey" type="text" name="_honey"> 
+
+            <!-- Disable Captcha-->
+            <input type="hidden" name="_captcha" value="false">
+
               <h2 data-reveal="right">Scrie-ți o sugestie/reclamație</h2>
       
               <div class="inputBox" data-reveal="right">
-                  <input type="text" name="name" required="required">
+                  <input type="text" name="Nume" required="required">
                   <span>Nume</span>
               </div>
       
               <div class="inputBox" data-reveal="right">
-                  <input type="text" name="surname" required="required">
+                  <input type="text" name="Prenume" required="required">
                   <span>Prenume</span>
               </div>
       
               <div class="inputBox" data-reveal="right">
-                  <input type="text" name="email" required="required">
+                  <input type="text" name="Email" required="required">
                   <span>Email</span>
               </div>
       
               <div class="inputBox" data-reveal="right">
-                  <textarea name="message" required="required"></textarea>
+                  <textarea name="Mesajul" required="required"></textarea>
                   <span>Mesajul tău...</span>
               </div>
       
