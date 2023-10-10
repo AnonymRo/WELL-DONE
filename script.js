@@ -93,4 +93,10 @@ function downloadPDF(pdfFilename) {
   link.click();
 }
 
+/* Scroll to the top of the page on load or refresh */
+
+ window.onload = function() {
+   window.scrollTo(0, 0);
+};
+
 
