@@ -84,5 +84,10 @@ document.getElementById('contactButton').addEventListener('click', function() {
   window.location.href = 'Contact.html';
 });
 
+function toggleHover(card) {
+  card.classList.toggle('hovered');
+}
+
+
 
 
