@@ -470,62 +470,35 @@
     transition-delay: 0s;
   }
 
-  /* Apply hover styles on tap for touch devices */
-    .MainContainer .card:active .contentBox::before,
-    .MainContainer .card:focus .contentBox::before {
+  .MainContainer .card.hovered .contentBox::before {
 
     transform: scaleX(1);
     transition: var(--transition-4);
     transform-origin: left;
     transition-delay: 0s;
   }
-    .MainContainer .card:active .contentBox .content {
+
+  .MainContainer .card.hovered .contentBox .content {
 
     transform: translateX(0px);
     transition-delay: 0.5s;
   }
 
-    .MainContainer .card:active .contentBox .content h3 {
+  .MainContainer .card.hovered .contentBox .content h3 {
+
     font-size: 1.3em;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: white;
   }
 
-    .MainContainer .card:active .contentBox .content p {
+  .MainContainer .card.hovered .contentBox .content p {
     font-size: 1em;
     line-height: 1.4em;
     font-weight: 300;
     color: white;
   }
 
-.MainContainer .card.hovered .contentBox::before {
-  transform: scaleX(1);
-  transition: var(--transition-4);
-  transform-origin: left;
-  transition-delay: 0s;
-}
-
-.MainContainer .card.hovered .contentBox .content {
-  transform: translateX(0px);
-  transition-delay: 0.5s;
-}
-
-.MainContainer .card.hovered .contentBox .content h3 {
-  font-size: 1.3em;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: white;
-}
-
-.MainContainer .card.hovered .contentBox .content p {
-  font-size: 1em;
-  line-height: 1.4em;
-  font-weight: 300;
-  color: white;
-}
-
-  
   .MainContainer .card .contentBox{
     display: flex;
     justify-content: center;
