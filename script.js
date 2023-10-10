@@ -84,4 +84,13 @@ document.getElementById('contactButton').addEventListener('click', function() {
   window.location.href = 'Contact.html';
 });
 
+/* PDF Download */
+
+function downloadPDF(pdfFilename) {
+  const link = document.createElement('a');
+  link.href = 'path/to/your/pdf/' + pdfFilename;
+  link.download = pdfFilename;
+  link.click();
+}
+
 
