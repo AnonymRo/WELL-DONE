@@ -84,12 +84,4 @@ document.getElementById('contactButton').addEventListener('click', function() {
   window.location.href = 'Contact.html';
 });
 
-function toggleHover(card) {
-  if (window.innerWidth <= 991) {
-    card.classList.toggle('hovered');
-  }
-}
-
-
-
 
