@@ -211,6 +211,31 @@
   }
   
   .btn:is(:hover, :focus-visible) { transform: translateY(-4px); }
+
+  .btn-index
+  {
+    background-color: #3a4a6b;
+    color: white;
+    padding: 20px 28px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 1;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .btn-index:hover
+  {
+    opacity: 0.7;
+  }
+
+  .btn-index:is(:hover, :focus-visible) { transform: translateY(-4px); }
   
   .section-text { font-size: var(--fs-5); }
   
@@ -375,7 +400,9 @@
   .contact .section-title { margin-block-start: 20px; }
   
   .section-text{
-    color: white;
+    color: #3a4a6b;
+    font-weight: 100;
+    opacity: 80%;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -409,6 +436,11 @@
     color: #3a4a6b;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.3em;
+  }
+
+  .Photo-line {
+    width: 100px;
+    border-bottom: 2px solid #3a4a6b;
   }
   
   .MainContainer{
@@ -725,8 +757,9 @@
  }
 
  .AboutUs-content .year {
-   font-weight: bold;
-   font-size: large;
+   font-weight: 700;
+   font-size: 1.2em;
+   color: #3a4a6b;
    margin-bottom: 10px;
  }
 
@@ -746,6 +779,8 @@
    display: inline-block;
    opacity: 0;
    transform: translateX(-10px);
+   font-weight: 200;
+   color: #3a4a6b;
  }
 
  .AboutUs-content.reveal p {
@@ -954,6 +989,7 @@
     font-size: 2em;
     display: flex;
     align-items: center;
+    margin-top: 30px;
   }
 
   .Services-container
@@ -1255,7 +1291,66 @@
     {
       width: 100%;
       padding-inline: 16px;
-      margin-bottom: 60px;
+      margin-bottom: 50px;
+      margin-top: 10px;
+      
+    }
+
+    .Services-title h2
+    {
+      padding-top: 75px;
+      margin-top: 0;
+    }
+
+    .Contact-title h2,
+    .Services-title h2,
+    .AboutUs-title
+    {
+      font-size: 1.8em;
+    }
+
+    .contact,
+    .Section-contact
+    {
+      padding-top: 120px;
+      padding-bottom: 80px;
+    }
+
+    .Section-services
+    {
+      padding: 50px 0;
+    }
+
+    .section-title
+    {
+      font-size: 2em;
+    }
+
+    .photo2
+    {
+      padding-bottom: 25px;
+      width: 90%;
+      height: 90%;
+      border-radius: 7px;
+    }
+
+    .contact-card
+    {
+      padding: 22px;
+      padding-bottom: 0;
+      margin-top: 12px;
+    }
+
+    .section-text
+    {
+      margin-top: 27px;
+    }
+
+    .Services-container .Services-info .Services-list
+    {
+      color: #3a4a6b;
+      font-weight: 200;
+      opacity: 90%;
     }
 
   }
