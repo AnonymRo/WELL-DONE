@@ -221,7 +221,7 @@
     font-size: 16px;
     opacity: 1;
     transition: 0.3s;
-    display: inline-block;
+    display: flex;
     text-decoration: none;
     cursor: pointer;
     border-radius: 7px;
@@ -438,8 +438,8 @@
     font-size: 2.3em;
   }
 
-  .Photo-line {
-    width: 100px;
+  .Text-line {
+    width: 80px;
     border-bottom: 2px solid #3a4a6b;
   }
   
@@ -729,6 +729,17 @@
   /*-----------------------------------*\
     #ABOUT US
   \*-----------------------------------*/ 
+
+  .Section-aboutus
+  {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 100px 0;
+  }
 
  .AboutUs-card {
    background-color: #c1c9d9;
@@ -1309,6 +1320,24 @@
       font-size: 1.8em;
     }
 
+    .AboutUs-title
+    {
+      text-align: center;
+      padding: 0;
+      margin-top: 30px;
+    }
+
+    .AboutUs-card
+    {
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    .Section-aboutus
+    {
+      padding-inline: 16px;
+    }
+
     .contact,
     .Section-contact
     {
@@ -1324,13 +1353,15 @@
     .section-title
     {
       font-size: 2em;
+      text-align: center;
     }
 
     .photo2
     {
       padding-bottom: 25px;
+      margin-left: 16px;
       width: 90%;
-      height: 90%;
+      height: 70%;
       border-radius: 7px;
     }
 
@@ -1341,9 +1372,15 @@
       margin-top: 12px;
     }
 
+    .btn-index
+    {
+      margin-left: 70px;
+    }
+
     .section-text
     {
       margin-top: 27px;
+      text-align: center;
     }
 
     .Services-container .Services-info .Services-list
