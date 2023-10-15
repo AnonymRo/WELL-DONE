@@ -733,28 +733,30 @@
   .Section-aboutus
   {
     position: relative;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 100vh;
-    padding: 100px 0;
+    padding-inline: 16px;
+    padding: 150px 100px;
   }
 
- .AboutUs-card {
-   background-color: #c1c9d9;
-   padding: 32px;
-   border-radius: var(--radius-8);
-   display: flex;
-   flex-direction: column;
-   position: relative;
-   z-index: 0;
-   box-sizing: border-box;
-   overflow: hidden;
+ .AboutUs-card 
+ {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #c1c9d9;
+  border-radius: 15px;
  }
 
  .AboutUs-content {
-   margin-bottom: 20px; /* Added margin between items */
+   margin-bottom: 40px; /* Added margin between items */
  }
 
  .AboutUs-title {
@@ -764,7 +766,6 @@
    display: flex;
    align-items: center;
    text-align: center;
-   padding-bottom: 30px;
  }
 
  .AboutUs-content .year {
@@ -1320,11 +1321,15 @@
       font-size: 1.8em;
     }
 
+    .Section-aboutus
+    {
+      padding: 130px;
+    }
+
     .AboutUs-title
     {
       text-align: center;
       padding: 0;
-      margin-top: 30px;
     }
 
     .AboutUs-card
