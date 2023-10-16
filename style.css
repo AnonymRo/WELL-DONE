@@ -450,7 +450,7 @@
     pointer-events: none;
     transition: all .4s;
     z-index: 999;
-    border: 3px solid #3a4a6b;
+    border: 2px solid #3a4a6b;
   }
   
   .to-top.active {
@@ -854,14 +854,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
   }
-
   
   .Contact-title
   {
     max-width: 800px;
     text-align: center;
+  }
+
+  .Form-title
+  {
+    max-width: 800px;
+    text-align: center;
+  }
+
+  .Form-line
+  {
+    width: 80px;
+    border-bottom: 2px solid #3a4a6b;
   }
 
   .Contact-title h2
@@ -871,26 +881,36 @@
     font-size: 2em;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
+
+  .Form-title h2
+  {
+    color: #3a4a6b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* CSS for CONTACT */
 
   .Contact-container
   {
-    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    padding-inline: 16px;
+    flex-direction: column;
+    width: 100%;
   }
 
   .Contact-container .Contact-info
   {
-    width: 50%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     background-color: #c1c9d9;
     border-radius: 15px;
     padding: 25px;
+    flex-direction: column;
   }
 
   .Contact-container .Contact-info .box
@@ -928,15 +948,26 @@
     font-weight: 550;
   }
 
-  .Contact-form
+  /* CSS for FORM */
+
+  .Form-container
   {
-    width: 40%;
-    padding: 50px;
-    background-color: #c1c9d9;
-    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
-  .Contact-form h2
+  .Form-container .Contact-form
+  {
+    width: 100%;
+    display: flex;
+    background-color: #c1c9d9;
+    border-radius: 15px;
+    padding: 25px;
+    flex-direction: column;
+  }
+
+  .Form-container .Contact-form h2
   {
     color: #3a4a6b;
     font-family: Arial, Helvetica, sans-serif;
@@ -944,15 +975,15 @@
     font-weight: 550;
   }
 
-  .Contact-form .inputBox
+  .Form-container .Contact-form .inputBox
   {
     position: relative;
     width: 100%;
     margin-top: 10px;
   }
 
-  .Contact-form .inputBox input,
-  .Contact-form .inputBox textarea
+  .Form-container .Contact-form .inputBox input,
+  .Form-container .Contact-form .inputBox textarea
   {
     width: 100%;
     padding: 5px 0;
@@ -964,7 +995,7 @@
     resize: none;
   }
 
-  .Contact-form .inputBox span
+  .Form-container .Contact-form .inputBox span
   {
     position: absolute;
     left: 0;
@@ -976,17 +1007,17 @@
     transition: 0.5s;
   }
 
-  .Contact-form .inputBox input:focus ~ span,
-  .Contact-form .inputBox input:valid ~ span,
-  .Contact-form .inputBox textarea:focus ~ span,
-  .Contact-form .inputBox textarea:valid ~ span
+  .Form-container .Contact-form .inputBox input:focus ~ span,
+  .Form-container .Contact-form .inputBox input:valid ~ span,
+  .Form-container .Contact-form .inputBox textarea:focus ~ span,
+  .Form-container .Contact-form .inputBox textarea:valid ~ span
   {
     color: #ddad35;
     font-size: 12px;
     transform: translateY(-20px);
   }
 
-  .Contact-form .inputBox input[type="submit"]
+  .Form-container .Contact-form .inputBox input[type="submit"]
   {
     width: 100px;
     border: none;
@@ -1098,18 +1129,6 @@
   
   @media (min-width: 575px) 
   {
-  
-    /**
-     * REUSED STYLE
-     */
-  
-    .container,
-    .Contact-container {
-      width: 100%;
-      margin-inline: auto;
-      
-    }
-  
     /**
      * PROJECT
      */
@@ -1304,26 +1323,29 @@
 
   @media (max-width: 991px)
   {
-    .Contact-form
+
+    .Section-contact
     {
-      padding: 50px;
+      padding: 50px 0;
+      flex-direction: column;
     }
 
     .Contact-container
     {
-      flex-direction: column;
-    }
-
-    .Contact-container .Contact-info
-    {
-      margin-bottom: 60px;
+      margin-top: 70px;
     }
 
     .Contact-container .Contact-info,
-    .Contact-form
+    .Form-container .Contact-form
     {
-      width: 100%;
-      padding-inline: 16px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .Form-line
+    {
+      display: block;
+      margin: auto;
     }
 
     .Services-container
@@ -1347,6 +1369,7 @@
     }
 
     .Contact-title h2,
+    .Form-title h2,
     .Services-title h2,
     .AboutUs-title
     {
@@ -1375,8 +1398,7 @@
       padding-inline: 16px;
     }
 
-    .contact,
-    .Section-contact
+    .contact
     {
       padding-top: 120px;
       padding-bottom: 80px;
@@ -1443,21 +1465,28 @@
 
   @media (min-width: 991px)
   {
-    .Contact-container .Contact-info
-    {
-      padding: 35px;
-      margin: 50px;
-    }
 
     .Services-info
     {
-      margin: 45px;
+      margin: 40px;
     }
 
-    .Contact-container .Contact-form
+    .Form-line
     {
-      margin: 50px;
+      display: block;
+      margin: auto;
     }
+
+    .Contact-container
+    {
+      margin: 100px;
+    }
+
+    .Form-container
+    {
+      margin: 100px;
+    }
+    
   }
   
   
