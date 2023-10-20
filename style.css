@@ -473,6 +473,8 @@
   .Text-line {
     width: 80px;
     border-bottom: 2px solid #3a4a6b;
+    display: block;
+    margin: auto;
   }
   
   .MainContainer{
@@ -849,8 +851,8 @@
   .Section-contact
   {
     position: relative;
-    min-height: 100vh;
-    padding: 150px 0;
+    min-height: 80vh;
+    padding: 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -860,12 +862,14 @@
   {
     max-width: 800px;
     text-align: center;
+    margin-bottom: 20px;
   }
 
-  .Form-title
+  .Contact-title .Form-title
   {
     max-width: 800px;
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .Form-line
@@ -896,14 +900,14 @@
 
   /* CSS for CONTACT */
 
-  .Contact-container
+  .Form-container
   {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  .Contact-container .Contact-info
+  .Form-container .Contact-info
   {
     width: 100%;
     display: flex;
@@ -911,16 +915,17 @@
     border-radius: 15px;
     padding: 25px;
     flex-direction: column;
+    margin-top: 30px;
   }
 
-  .Contact-container .Contact-info .box
+  .Form-container .Contact-info .box
   {
     position: relative;
     padding: 20px 0;
     display: flex;
   }
 
-  .Contact-container .Contact-info .box .icon
+  .Form-container .Contact-info .box .icon
   {
     min-width: 60px;
     height: 60px;
@@ -932,7 +937,7 @@
     border-radius: 50%;
   }
 
-  .Contact-container .Contact-info .box .text
+  .Form-container .Contact-info .box .text
   {
     display: flex;
     margin-left: 20px;
@@ -941,7 +946,7 @@
     font-weight: 300;
   }
 
-  .Contact-container .Contact-info .box .text h3
+  .Form-container .Contact-info .box .text h3
   {
     color: #3a4a6b;
     font-family: Arial, Helvetica, sans-serif;
@@ -949,13 +954,6 @@
   }
 
   /* CSS for FORM */
-
-  .Form-container
-  {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
 
   .Form-container .Contact-form
   {
@@ -965,6 +963,7 @@
     border-radius: 15px;
     padding: 25px;
     flex-direction: column;
+    margin-top: 30px;
   }
 
   .Form-container .Contact-form h2
@@ -1166,8 +1165,7 @@
      * REUSED STYLE
      */
   
-    .container,
-    .Contact-container { max-width: 720px; }
+    .container { max-width: 720px; }
   
     .section-text { --fs-5: 2rem; }
   
@@ -1243,8 +1241,7 @@
      * REUSED STYLE
      */
   
-    .container,
-    .Contact-container { max-width: 960px; }
+    .container { max-width: 960px; }
   
     /**
      * HEADER
@@ -1330,22 +1327,28 @@
       flex-direction: column;
     }
 
-    .Contact-container
+    .Form-container
     {
-      margin-top: 70px;
+      margin-bottom: 50px;
+
     }
 
-    .Contact-container .Contact-info,
+    .Form-container .Contact-info,
     .Form-container .Contact-form
     {
-      margin-top: 30px;
-      margin-bottom: 30px;
+      margin: 0;
+    }
+
+    .Form-title h2
+    {
+      margin-top: 90px;
     }
 
     .Form-line
     {
       display: block;
       margin: auto;
+      margin-bottom: 30px;
     }
 
     .Services-container
@@ -1486,7 +1489,7 @@
     {
       margin: 100px;
     }
-    
+
   }
   
   
