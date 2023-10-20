@@ -92,8 +92,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* Button for Contact page*/
 
-document.getElementById('contactButton').addEventListener('click', function() {
-  window.location.href = 'Contact.html';
+document.addEventListener("DOMContentLoaded", function () {
+
+  document.getElementById('contactButton').addEventListener('click', function () {
+    window.location.href = 'Contact.html';
+  });
 });
 
 /* PDF Download */
@@ -107,6 +110,9 @@ function downloadPDF(pdfFilename) {
 
 /* Button for Index page*/
 
-document.getElementById('indexButton').addEventListener('click', function() {
-  window.location.href = 'index.html';
+document.addEventListener("DOMContentLoaded", function () {
+
+  document.getElementById('indexButton').addEventListener('click', function () {
+    window.location.href = 'index.html';
+  });
 });

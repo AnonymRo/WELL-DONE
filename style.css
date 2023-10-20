@@ -731,7 +731,7 @@
   @media (max-width: 1025px)
   {
     footer{
-      padding: 40px;
+      padding: 50px;
     }
   
     footer .container{
@@ -756,6 +756,14 @@
   
     .copyrightText{
       padding: 8px 40px;
+    }
+  }
+
+  @media (min-width: 1025px)
+  {
+    .footer
+    {
+      padding: 60px;
     }
   }
 
@@ -1105,6 +1113,22 @@
   }
 
   /*-----------------------------------*\
+    #SUCCES PAGE
+  \*-----------------------------------*/
+
+  .Section-success
+  {
+    position: relative;
+    min-height: 80vh;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+
+  /*-----------------------------------*\
     #MEDIA QUERIES
   \*-----------------------------------*/
   
@@ -1217,6 +1241,21 @@
     .copyright { margin-block-end: 0; }
   
   }
+
+  @media (max-width: 850px)
+  {
+    .contact2
+    {
+      padding-bottom: 0;
+    }
+
+    .sec.aboutus,
+    .sec.quickLinks
+    {
+      display: none;
+    }
+
+  }
   
   /* Responsive for larger than 850px screen */
   
@@ -1320,6 +1359,11 @@
 
   @media (max-width: 991px)
   {
+
+    .Section-success
+    {
+      padding: 50px 0;
+    }
 
     .Section-contact
     {
