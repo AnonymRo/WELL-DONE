@@ -1092,43 +1092,48 @@
     margin-top: 30px;
   }
 
-  .Services-container
-  {
+  .Services-container {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between; /* Distribute items with space in between them. */
+    align-items: flex-start; /* Align items at the top. */
     margin-top: 30px;
     padding-inline: 16px;
-  }
+    flex-wrap: wrap; /* Allow items to wrap to the next line when there's not enough space. */
+}
 
-  .Services-container .Services-info
-  {
-    width: 33%;
-    display: flex;
-    flex-direction: column;
+.Services-container .Services-info {
+    width: calc(33.33% - 10px); /* Adjust the width to leave space for margins. */
     background-color: #c1c9d9;
     border-radius: 15px;
     padding: 25px;
-    position: relative;
-  }
+    display: flex;
+    flex-direction: column; /* Apply flex properties to the container. */
+}
 
-  .Services-container .Services-info h2
-  {
+.Services-container .Services-info h2 {
     color: #3a4a6b;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 550;
-    display: flex;
-    flex-direction: column;
     padding: 5px;
-  }
+    flex: 1; /* Allow the h2 to expand to fill the available space. */
+}
 
-  .Services-container .Services-info .Services-list
-  {
+.Services-container .Services-info .Services-list {
     display: flex;
     flex-direction: column;
     padding: 5px;
-  }
+}
+
+/* Ensure all columns have the same height */
+.Services-container .Services-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allow each column to expand to the same height. */
+}
+
+
+
 
   /*-----------------------------------*\
     #SUCCES PAGE
@@ -1415,6 +1420,7 @@
       display: block;
       margin: auto;
       margin-bottom: 30px;
+      width: 70px;
     }
 
     .Services-container
@@ -1428,7 +1434,6 @@
       padding-inline: 16px;
       margin-bottom: 50px;
       margin-top: 10px;
-      
     }
 
     .Form-container .Contact-form .inputBox input,
@@ -1436,6 +1441,16 @@
     {
       margin: 10px 10px;
       left: -12px;
+    }
+
+    .Photo
+    {
+      font-size: 1.8em;
+    }
+
+    .Text-line
+    {
+      width: 70px;
     }
 
 
@@ -1493,15 +1508,15 @@
 
     .section-title
     {
-      font-size: 2em;
+      font-size: 1.9em;
       text-align: center;
     }
 
     .photo2
     {
-      padding-bottom: 25px;
-      width: 90%;
-      height: 70%;
+      margin-bottom: 25px;
+      width: 85%;
+      height: 65%;
       border-radius: 7px;
       display: block;
       margin: auto;
@@ -1510,9 +1525,23 @@
     .contact-card
     {
       padding: 22px;
-      padding-bottom: 0;
       margin-top: 10px;
       display: inline-flex;
+    }
+
+    footer .container h2
+    {
+      font-size: 1.4em;
+    }
+
+    .contact2 .info li a
+    {
+      font-size: 0.9em;
+    }
+
+    .btn
+    {
+      width: 100%;
     }
 
     .btn-index
@@ -1520,12 +1549,14 @@
       display: block;
       margin: auto;
       margin-top: 30px;
+      font-size: 0.8em;
     }
 
     .section-text
     {
       margin-top: 27px;
       text-align: center;
+      font-size: 0.9em;
     }
 
     .Services-container .Services-info .Services-list
@@ -1570,7 +1601,6 @@
     }
 
   }
-  
   
   /* Responsive for larger than 1200px screen */
   
