@@ -137,17 +137,25 @@ function getCookie(cName)
   return value;
 }
 
-// Add an event listener for the "click" event
-document.querySelector("#cookies-btn").addEventListener("click", () => {
-  document.querySelector("#cookies").style.display = "none";
-  setCookie("cookie", true, 30);
-});
+var cookiesBtnElement = document.querySelector("#cookies-btn");
+if (cookiesBtnElement) {
+  cookiesBtnElement.addEventListener("click", () => {
+    var cookiesElement = document.querySelector("#cookies");
+    if (cookiesElement) {
+      cookiesElement.style.display = "none";
+      setCookie("cookie", true, 30);
+    }
+  });
+}
 
 // Define the cookieMessage function
-function cookieMessage() 
-{
-  if (!getCookie("cookie")) {
-    document.querySelector("#cookies").style.display = "block";
+function cookieMessage() {
+  var cookiesElement = document.querySelector("#cookies");
+
+  if (cookiesElement) {
+    if (!getCookie("cookie")) {
+      cookiesElement.style.display = "block";
+    }
   }
 }
 
