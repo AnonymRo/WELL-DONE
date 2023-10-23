@@ -236,7 +236,7 @@
   }
 
   .btn-index:is(:hover, :focus-visible) { transform: translateY(-4px); }
-  
+
   .section-text { font-size: var(--fs-5); }
   
   .section-title { margin-block-end: 16px; }
@@ -906,6 +906,16 @@
     justify-content: center;
   }
 
+  .Form-title2 h2
+  {
+    color: #3a4a6b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   /* CSS for CONTACT */
 
   .Form-container
@@ -917,7 +927,8 @@
 
   .Form-container .Contact-info
   {
-    width: 100%;
+    width: 450px;
+    height: 450px;
     display: flex;
     background-color: #c1c9d9;
     border-radius: 15px;
@@ -966,12 +977,13 @@
   .Form-container .Contact-form
   {
     width: 100%;
+    height: 455px;
     display: flex;
     background-color: #c1c9d9;
     border-radius: 15px;
-    padding: 25px;
+    padding: 35px;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 33px;
   }
 
   .Form-container .Contact-form h2
@@ -993,13 +1005,15 @@
   .Form-container .Contact-form .inputBox textarea
   {
     width: 100%;
+    position: relative;
     padding: 5px 0;
     font-size: 16px;
-    margin: 10px 0;
+    margin: 12px 35px;
     border: none;
     border-bottom: 2px solid #333;
     outline: none;
     resize: none;
+    left: -37px;
   }
 
   .Form-container .Contact-form .inputBox span
@@ -1026,11 +1040,15 @@
 
   .Form-container .Contact-form .inputBox input[type="submit"]
   {
-    width: 100px;
+    width: 120px;
     border: none;
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
+    left: 0;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
   }
 
   .Honey
@@ -1369,6 +1387,7 @@
     {
       padding: 50px 0;
       flex-direction: column;
+      padding-inline: 16px;
     }
 
     .Form-container
@@ -1381,11 +1400,14 @@
     .Form-container .Contact-form
     {
       margin: 0;
+      width: 100%;
+      height: 100%;
+      padding: 15px;
     }
 
     .Form-title h2
     {
-      margin-top: 90px;
+      margin-top: 85px;
     }
 
     .Form-line
@@ -1407,6 +1429,19 @@
       margin-bottom: 50px;
       margin-top: 10px;
       
+    }
+
+    .Form-container .Contact-form .inputBox input,
+    .Form-container .Contact-form .inputBox textarea
+    {
+      margin: 10px 10px;
+      left: -12px;
+    }
+
+
+    .Form-container .Contact-form .inputBox input[type="submit"]
+    {
+      width: 140px;
     }
 
     .Services-title h2
