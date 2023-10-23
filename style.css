@@ -297,7 +297,7 @@
   }
   
   .nav-open-btn {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     color: white;
   }
   
@@ -1212,7 +1212,7 @@
      * REUSED STYLE
      */
   
-    .container { max-width: 720px; }
+    .container { width: 100%; }
   
     .section-text { --fs-5: 2rem; }
   
@@ -1374,6 +1374,12 @@
       grid-template-columns: 0.8fr 1fr;
       align-items: center;
       gap: 90px;
+      margin-top: 40px;
+    }
+
+    .AboutUs-title
+    {
+      margin-top: 20px;
     }
   
   }
@@ -1525,7 +1531,6 @@
     .contact-card
     {
       padding: 22px;
-      margin-top: 10px;
       display: inline-flex;
     }
 
@@ -1603,6 +1608,11 @@
     .Form-container
     {
       margin: 100px;
+    }
+
+    .btn-index
+    {
+      margin-top: 50px;
     }
 
   }
