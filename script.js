@@ -41,7 +41,7 @@ addEventOnElements(navTogglers, "click", toggleNavbar);
 const header = document.querySelector("[data-header]");
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY > 100) {
+  if (window.scrollY > 50) {
     header.classList.add("active");
   } else {
     header.classList.remove("active");
@@ -90,15 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 50);
 });
 
-/* Button for Contact page*/
-
-document.addEventListener("DOMContentLoaded", function () {
-
-  document.getElementById('contactButton').addEventListener('click', function () {
-    window.location.href = 'Contact.html';
-  });
-});
-
 /* PDF Download */
 
 function downloadPDF(pdfFilename) {
@@ -108,11 +99,20 @@ function downloadPDF(pdfFilename) {
   link.click();
 }
 
-/* Button for Index page*/
-
 document.addEventListener("DOMContentLoaded", function () {
+  const indexButton = document.getElementById('indexButton');
+  if (indexButton) {
+    indexButton.addEventListener('click', function () {
+      window.location.href = 'index.html';
+    });
+  }
 
-  document.getElementById('indexButton').addEventListener('click', function () {
-    window.location.href = 'index.html';
-  });
+  const contactButton = document.getElementById('contactButton');
+  if (contactButton) {
+    contactButton.addEventListener('click', function () {
+      window.location.href = 'Contact.html';
+    });
+  }
 });
+
+
