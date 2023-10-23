@@ -1508,7 +1508,7 @@
 
     .section-title
     {
-      font-size: 1.9em;
+      font-size: 2em;
       text-align: center;
     }
 
@@ -1549,6 +1549,11 @@
       display: block;
       margin: auto;
       margin-top: 30px;
+      font-size: 0.9em;
+    }
+
+    .copyrightText
+    {
       font-size: 0.8em;
     }
 
