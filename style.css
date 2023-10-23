@@ -1508,7 +1508,7 @@
 
     .section-title
     {
-      font-size: 2em;
+      font-size: 2.1em;
       text-align: center;
     }
 
@@ -1549,19 +1549,19 @@
       display: block;
       margin: auto;
       margin-top: 30px;
-      font-size: 0.9em;
+      font-size: 1em;
     }
 
     .copyrightText
     {
-      font-size: 0.8em;
+      font-size: 0.6em;
     }
 
     .section-text
     {
       margin-top: 27px;
       text-align: center;
-      font-size: 0.9em;
+      font-size: 1em;
     }
 
     .Services-container .Services-info .Services-list
