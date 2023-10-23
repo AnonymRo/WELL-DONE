@@ -917,6 +917,12 @@
     justify-content: center;
   }
 
+  .box .text .contact-text:hover
+  {
+    color: #ddad35;
+    transition: var(--transition-1);
+  }
+
   /* CSS for CONTACT */
 
   .Form-container
