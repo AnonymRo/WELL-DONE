@@ -99,6 +99,7 @@ function downloadPDF(pdfFilename) {
   link.click();
 }
 
+/* JS for buttons */
 document.addEventListener("DOMContentLoaded", function () {
   const indexButton = document.getElementById('indexButton');
   if (indexButton) {
@@ -115,9 +116,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+/* JS for cookies */
+
 // Define the setCookie function
-function setCookie(cName, cValue, expDays) 
-{
+function setCookie(cName, cValue, expDays) {
   let date = new Date();
   date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
   const expires = "expires=" + date.toUTCString();
@@ -125,41 +127,68 @@ function setCookie(cName, cValue, expDays)
 }
 
 // Define the getCookie function
-function getCookie(cName) 
-{
+function getCookie(cName) {
   const name = cName + "=";
   const cDecoded = decodeURIComponent(document.cookie);
   const cArr = cDecoded.split("; ");
   let value;
   cArr.forEach(val => {
     if (val.indexOf(name) === 0) value = val.substring(name.length);
-  })
+  });
   return value;
 }
 
 var cookiesBtnElement = document.querySelector("#cookies-btn");
-if (cookiesBtnElement) {
-  cookiesBtnElement.addEventListener("click", () => {
-    var cookiesElement = document.querySelector("#cookies");
-    if (cookiesElement) {
-      cookiesElement.style.display = "none";
-      setCookie("cookie", true, 30);
-    }
-  });
-}
+var cookieSettingsLink = document.querySelector("#cookie-settings");
+var closeCookieModal = document.getElementById("close-cookie-modal");
+var saveCookiePreferencesBtn = document.getElementById("save-cookie-preferences");
+var cookieSettingsModal = document.getElementById("cookie-settings-modal");
+
+cookieSettingsLink.addEventListener("click", () => {
+  cookieSettingsModal.style.left = "0";
+});
+
+closeCookieModal.addEventListener("click", () => {
+  cookieSettingsModal.style.left = "-50%";
+});
+
+cookiesBtnElement.addEventListener("click", () => {
+  var cookiesElement = document.querySelector("#cookies");
+  if (cookiesElement) {
+    cookiesElement.style.display = "none";
+    setCookie("cookie", true, 30);
+  }
+});
+
+cookieSettingsLink.addEventListener("click", () => {
+  cookieSettingsModal.style.display = "block";
+});
+
+closeCookieModal.addEventListener("click", () => {
+  cookieSettingsModal.style.display = "none";
+});
+
+saveCookiePreferencesBtn.addEventListener("click", () => {
+  // Process and save user's cookie preferences
+  if (document.getElementById("analyticsCookies").checked) {
+    setCookie("analyticsCookie", "true", 365);
+  } else {
+    // Remove the analytics cookie if the user disagrees
+    document.cookie = "analyticsCookie=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  }
+
+  // Close the modal
+  cookieSettingsModal.style.display = "none";
+});
 
 // Define the cookieMessage function
 function cookieMessage() {
   var cookiesElement = document.querySelector("#cookies");
 
-  if (cookiesElement) {
-    if (!getCookie("cookie")) {
-      cookiesElement.style.display = "block";
-    }
+  if (cookiesElement && !getCookie("cookie")) {
+    cookiesElement.style.display = "block";
   }
 }
 
 // Add an event listener for the "load" event
 window.addEventListener("load", cookieMessage);
-
-

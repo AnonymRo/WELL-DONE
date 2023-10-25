@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -81,7 +82,8 @@
           <h2 class="h2 section-title">Perfecțiunea serviciului oferit!</h2>
 
           <p class="section-text">
-            Ai probleme cu instalatia sanitara si nu stii la cine sa apelezi? Noi iti venim in ajutor. Pentru ca aici facem lucrurile WELL-DONE.
+            Ai probleme cu instalatia sanitara si nu stii la cine sa apelezi? Noi iti venim in ajutor. Pentru ca aici
+            facem lucrurile WELL-DONE.
           </p>
 
           <button class="btn-index" id="contactButton">Contactează-ne</button>
@@ -227,15 +229,44 @@
   <div id="cookies">
     <div class="Cookie-container">
       <div class="Subcontainer">
+
         <div class="cookies">
-
           <p>Acest site folosește cookie-uri. Continuarea navigării reprezintă acceptul dvs. pentru această folosință.
-          <a href="">Mai multe informații...</a></p>
-
+            <a href="javascript:void(0);" id="cookie-settings">Setări cookie</a>
+          </p>
           <button id="cookies-btn">Am înțeles!</button>
-          
         </div>
+
       </div>
+    </div>
+  </div>
+
+  <div id="cookie-settings-modal" class="modal">
+    <div class="modal-content">
+
+      <span class="close" id="close-cookie-modal">&times;</span>
+
+      <h2>Setări</h2>
+      
+      <p>Alegeți preferințele tale:</p>
+
+      <h2>Cookie-uri necesare</h2>
+      <p>Aceste cookie-uri sunt necesare pentru funcționarea optimă a site-ului.</p>
+
+      <label>
+        <input type="checkbox" id="essentialCookies" checked disabled>
+      </label>
+
+      <h2>Cookie-uri de analiză</h2>
+      <p>Cookie-urile de analiză ne ajută să imbunătățim site-ul nostru prin colectarea si raportarea de informații
+        despre cum este acesta folosit.</p>
+
+      <label>
+        <input type="checkbox" id="analyticsCookies">
+      </label>
+
+      <button id="save-cookie-preferences">Salvează preferințele</button>
+
     </div>
   </div>
 
@@ -245,7 +276,7 @@
   <script src="script.js" defer></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
-  
+
 </body>
 
 
@@ -261,7 +292,7 @@
         <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
       </ul>
     </div>
-    
+
     <div class="sec quickLinks">
       <h2>Acces rapid</h2>
       <ul>
@@ -295,7 +326,7 @@
           <span><i class="fa fa-phone" aria-hidden="true"></i></span>
           <p><a href="tel:0755617203">(+40)12 345 679</a></p>
         </li>
-        
+
         <li>
           <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
           <p><a href="mailto:welldone.instalatii@gmail.com">welldone.instalatii@gmail.com</a></p>
@@ -306,8 +337,8 @@
 
 </footer>
 
-  <div class="copyrightText">
-    <p>&#169;&nbsp;&nbsp;2023&nbsp;&nbsp;|&nbsp;&nbsp;Toate drepturile de autor sunt rezervate.</p>
-  </div>
+<div class="copyrightText">
+  <p>&#169;&nbsp;&nbsp;2023&nbsp;&nbsp;|&nbsp;&nbsp;Toate drepturile de autor sunt rezervate.</p>
+</div>
 
 </html>
