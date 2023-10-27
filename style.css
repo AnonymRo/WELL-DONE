@@ -837,6 +837,18 @@ footer p {
   color: white;
 }
 
+#essentialCookies
+{
+  display: block;
+  margin: auto;
+}
+
+#analyticsCookies
+{
+  display: block;
+  margin: auto;
+}
+
 @media (max-width: 1600px) {
   .Cookie-container {
     width: 100%;
