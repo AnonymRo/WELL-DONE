@@ -375,7 +375,8 @@ body.nav-active {
   visibility: visible;
   transform: translateX(300px);
   opacity: 1;
-  border-radius: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   width: 70%;
 }
 
