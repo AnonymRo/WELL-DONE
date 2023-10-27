@@ -376,6 +376,7 @@ body.nav-active {
   transform: translateX(300px);
   opacity: 1;
   width: 70%;
+  border-radius: 0px 2px 0px 0px;
 }
 
 .navbar-top {
