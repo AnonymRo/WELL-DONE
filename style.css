@@ -356,7 +356,7 @@ body.nav-active {
   position: fixed;
   top: 0;
   left: -300px;
-  background-color: var(--raisin-black);
+  background-color: #3a4a6b;
   color: var(--white);
   max-width: 300px;
   width: 100%;
@@ -374,6 +374,9 @@ body.nav-active {
 .navbar.active {
   visibility: visible;
   transform: translateX(300px);
+  opacity: 1;
+  border-radius: 10px;
+  width: 70%;
 }
 
 .navbar-top {
@@ -383,7 +386,7 @@ body.nav-active {
 }
 
 .nav-close-btn {
-  background-color: var(--white_a8);
+  background-color: var(--raisin-black);
   color: var(--white);
   font-size: 2rem;
   padding: 6px;
@@ -408,6 +411,21 @@ body.nav-active {
   padding-block: 6px;
 }
 
+@media (max-width: 850px) {
+  .navbar-link.facebook-icon {
+    display: block;
+    font-size: 2.9rem;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 850px) {
+  .navbar-link.facebook-icon {
+    display: none;
+  }
+}
+
+
 .contact-link {
   transition: var(--transition-1);
 }
@@ -422,7 +440,7 @@ body.nav-active {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: var(--raisin-black);
+  background-color: black;
   pointer-events: none;
   opacity: 0;
   transition: var(--transition-1);
@@ -430,7 +448,7 @@ body.nav-active {
 
 .overlay.active {
   pointer-events: all;
-  opacity: 0.8;
+  opacity: 0.3;
 }
 
 
@@ -836,14 +854,12 @@ footer p {
   color: white;
 }
 
-#essentialCookies
-{
+#essentialCookies {
   display: block;
   margin: auto;
 }
 
-#analyticsCookies
-{
+#analyticsCookies {
   display: block;
   margin: auto;
 }
