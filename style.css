@@ -375,8 +375,8 @@ body.nav-active {
   visibility: visible;
   transform: translateX(300px);
   opacity: 1;
-  border-radius: 10px;
-  width: 70%;
+  border-radius: 2px;
+  width: 60%;
 }
 
 .navbar-top {
@@ -448,7 +448,7 @@ body.nav-active {
 
 .overlay.active {
   pointer-events: all;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 
