@@ -375,13 +375,8 @@ body.nav-active {
   visibility: visible;
   transform: translateX(300px);
   opacity: 1;
-<<<<<<< HEAD
   border-radius: 2px;
   width: 60%;
-=======
-  width: 70%;
-  border-radius: 0px 2px 0px 0px;
->>>>>>> 1d83313310f1f111f6d01f509a83c109cf96b489
 }
 
 .navbar-top {
