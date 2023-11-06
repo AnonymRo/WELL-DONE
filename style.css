@@ -358,10 +358,10 @@ body.nav-active {
   left: -300px;
   background-color: #3a4a6b;
   color: var(--white);
-  max-width: 300px;
+  max-width: 200px;
   width: 100%;
   height: 100vh;
-  padding: 30px;
+  padding: 25px;
   padding-block-end: 40px;
   display: flex;
   flex-direction: column;
@@ -376,7 +376,7 @@ body.nav-active {
   transform: translateX(300px);
   opacity: 1;
   border-radius: 0px 3px 0px 0px;
-  width: 60%;
+  width: 55%;
 }
 
 .navbar-top {
